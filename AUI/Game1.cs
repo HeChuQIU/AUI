@@ -19,8 +19,7 @@ namespace AUI
         public Game1()
         {   //set asset refs
             GraphicsDeviceManager Graphics = new GraphicsDeviceManager(this);
-            Graphics.SynchronizeWithVerticalRetrace = true;
-            Graphics.GraphicsProfile = GraphicsProfile.HiDef;
+            IsFixedTimeStep = true;
             Content.RootDirectory = "Content";
             Assets.GDM = Graphics;
             Assets.CM = Content;
